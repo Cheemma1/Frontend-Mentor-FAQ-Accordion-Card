@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+body{
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)), url(images/bg-pattern-desktop.svg);
+height: 100vh;
+position: relative;
+}
+
+.img2{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    z-index: 1;
+}
+.img1{
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+margin: 3rem auto 2rem auto;
+width: 80%;
+padding: 4rem 0;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px ;
+    background-image: url(images/illustration-woman-online-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 15vh;
+
+}
+.content{
+    padding-right: 8rem;
+}
+h1{
+    padding: 3rem 0;
+    font-size: 1.5rem;
+}
+h2:hover{
+    color: red;
+}
+p{
+    color: hsl(237, 12%, 33%);
+}
+.question-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+.plus-icon{
+    color: red;
+    margin-bottom: 0.4rem;
+}
+.minus-icon{
+    color: red;
+}
+
+.question-text {
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+    margin: 1rem 0;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
+.line{
+    background: hsl(240, 5%, 91%);
+    height: 2px;
+    width: 100%;
+    margin: 1rem 0;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:768px) {
+
+.img1{
+    top: 0;
+    left: 20%;
+    position: relative;
+    max-width: 50%;
+    display: block;
+}    
+.img2{
+width: 10%;
+top: 40%;
+left: 23%;
+position: absolute;
+z-index: 1;
+}
+.image{
+    position: absolute;
+    top: -10%;
+    display: grid;
+    place-content: center;
+}
+h1{
+    margin-top: 2rem;
+}
+.container{
+ 
+    grid-template-columns: repeat(1,1fr);
+    padding: 2rem 0;
+    margin: 5rem auto 1rem auto;
+    background-image: none;
+    width: 90%;
+    
+}
+.content{
+    padding: 1rem ;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 0.9rem;
+}
+.attribution {
+   padding: 1rem 0;
+}
+}
+
